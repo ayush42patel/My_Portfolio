@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Patel - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Ayush Patel</h1>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <div class="about-content">
+      <img src="Images/8.jpg" alt="Ayush Patel" class="profile-photo">
+      <p>I am Ayush Patel, a tech enthusiast with expertise in Python, SQL, HTML, and CSS, and I am currently expanding my skills with React, JavaScript, and data analytics. I am pursuing my BTECH in COMPUTER SCIENCE (DATA SCIENCE).<br><br>
+        I am passionate about applying tech solutions to real-world problems and have worked on projects. As the tech lead of Code Aakar, I guide students in developing technical skills, and I am always eager to learn and collaborate on innovative projects.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project-card">
+      <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 1: Smart Attendance System</h3>
+      <p style="text-align: left;"><strong>Brief of Project:</strong> A facial recognition-based attendance system for students.</p>
+      <br>
+      <p style="text-align: left;"><strong>Problem Statement:</strong> This project aims to solve the issue of manually tracking student attendance by leveraging facial recognition technology to provide an automated solution.</p>
+      <button class="view-more" onclick="showModal('modal1')">View Details</button>
+    </div>
+    
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+
+      <h3 style="text-align: center;"><strong>SMART ATTENDANCE SYSTEM</strong></h3>
+
+      <p><strong>Project Overview:</strong> This system uses facial recognition technology to automate the attendance marking process, allowing for quick and efficient tracking of student attendance.</p>
+      
+      <p style="text-align: left;"><strong>Status (In Progress):</strong><br><strong>Completed:</strong> Face recognition functionality using KNN and database is attached.<br><br>
+      <strong>Pending:</strong> User login authentication on Android app or Streamlit.</p> 
+      
+      <p><strong>Technologies Used:</strong> Python, OpenCV, SQLite</p>
+      <p><strong>Libraries:</strong> OpenCV, Keras, Scikit-Learn</p>  
+      <p><strong>Future Implementation:</strong> This system can be adopted in Indian educational institutions to streamline attendance and reduce errors. Future features could include multi-language support, parent notifications, and integration with student management systems.</p>
+
+      <div style="text-align: center;">
+        <a href="https://github.com/ayush42patel/Smart_Attendance" target="_blank" class="button">GitHub Repository</a>
+        <!-- <a href="https://deployed-link.com" target="_blank" class="button">Live Demo</a> -->
+        <a href="javascript:void(0)" onclick="alert('Live Demo not available in this release.')" class="button">Live Demo</a>   
+      </div>
+    </div>
+  </div>
+  <div class="project-card">
+  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 2: Speed Detection System</h3>
+  <p style="text-align: left;"><strong>Brief of Project:</strong> A system for detecting and monitoring vehicle speed using OpenCV.</p>
+  <br>
+  <p style="text-align: left;"><strong>Problem Statement:</strong> The project aims to automate speed detection of vehicles using video processing to monitor traffic and enforce speed regulations efficiently.</p>
+  <button class="view-more" onclick="showModal('modal2')">View Details</button>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h3 style="text-align: center;"><strong>SPEED DETECTION SYSTEM</strong></h3>
+    <p><strong>Project Overview:</strong> This system leverages OpenCV to process video streams and detect vehicle speed in real-time using model training techniques.</p>
+    
+    <p style="text-align: left;">
+      <strong>Status (In Progress):</strong><br>
+      <strong>Completed:</strong> Video input processing and basic speed calculation using image processing.<br><br>
+      <strong>Pending:</strong> Advanced model training for accurate speed estimation and integration with real-world traffic datasets.
+    </p> 
+    
+    <p><strong>Technologies Used:</strong> Python, OpenCV, Machine Learning</p>
+    <p><strong>Libraries:</strong> OpenCV, NumPy, Pandas, Scikit-Learn</p>   
+    <p><strong>Future Implementation:</strong> This system can be applied in traffic management systems for automated speed monitoring, helping reduce accidents and enforcing speed regulations.</p>
+
+    <div style="text-align: center;">
+      <a href="https://github.com/your-github-username/speed-detection" target="_blank" class="button">GitHub Repository</a>
+      <!-- <a href="https://deployed-link.com" target="_blank" class="button">Live Demo</a> -->
+      <a href="javascript:void(0)" onclick="alert('Live Demo not available in this')" class="button">Live Demo</a>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="skills">
+  <h2>SKILLS</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="Icon/python.jpeg" alt="Python Icon" class="skill-icon">
+      <h4>Python</h4>
+    </div>
+    
+    <div class="skill-card">
+      <img src="Icon/sql.jpeg" alt="SQL Icon" class="skill-icon">
+      <h4>SQL</h4>    
+    </div>
+
+    <div class="skill-card">
+      <img src="Icon/HTML.jpeg" alt="HTML Icon" class="skill-icon">
+      <h4>HTML</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="Icon/CSS.jpeg" alt="CSS Icon" class="skill-icon">
+      <h4>CSS</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="Icon/C.jpeg" alt="C Icon" class="skill-icon">
+      <h4>C</h4>
+    </div>
+
+    <div class="skill-card">
+      <img src="Icon/C++.jpeg" alt="C++ Icon" class="skill-icon">
+      <h4>C++</h4>
+    </div>
+
+</section>
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="certification-cards">
+    <div class="certification-card">
+      <h3>Python: Zero to Hero Certification</h3>
+      <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+      <a href="https://www.guvi.in/share-certificate/Chk0bI7134107W608P" target="_blank" class="button">View Credential</a>
+    </div>
+    <div class="certification-card">
+      <h3>Nodejs and Expressjs Bootcamp</h3>
+      <p>Issued by <a href="https://www.devtown.in/" target="_blank">DevTown</a></p>
+      <a href="https://cert.devtown.in/verify/Z2jeMnM" target="_blank" class="button">View Credential</a>
+    </div>
+    <div class="certification-card">
+      <h3>Chat GPT for Programmers</h3>
+      <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+      <a href="https://www.guvi.in/share-certificate/Fc935vdZ271m28481J" target="_blank" class="button">View Credential</a>
+    </div>
+  </div>
+  <a href="Certification.html" id="view-all">View All</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <!-- Social Links -->
+    <div class="social-links">
+      <!-- <div class="social-item">
+        <a href="https://instagram.com/yourprofile" target="_blank">
+          <img src="Icon/instagram.jpeg" alt="Instagram">
+        </a>
+        <p>Instagram</p>
+      </div> -->
+      <div class="social-item">
+        <a href="https://www.linkedin.com/in/ayush-patel-88229027b/" target="_blank">
+          <img src="Icon/Linkedin.jpeg" alt="LinkedIn">
+        </a>
+        <p>LinkedIn</p>
+      </div>
+      <div class="social-item">
+        <a href="https://x.com/AyushPatel52715" target="_blank">
+          <img src="Icon/X.jpeg" alt="X">
+        </a>
+        <p>X</p>
+      </div>
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr-code-container">
+      <img src="Icon/qrcode.png" alt="QR Code" class="qr-code">
+      <P>Scan The QR COde</P>
+    </div>
+
+    <!-- Google Form Link -->
+    <div class="form-link-container">
+      <p>or</p><br>
+      <a href="https://forms.gle/fkHWDrskmrC8Vy8PA" target="_blank" class="form-button">Fill Out Form</a>
+    </div>
+
+    <!-- Email -->
+    <div class="email-container">
+      <p>Contact Email: <a href="mailto:your-email@example.com">ayush42patel@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+</section>
+  <footer>
+    <p>&copy; 2024 Ayush Patel. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
