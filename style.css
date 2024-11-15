@@ -255,35 +255,6 @@ button {
   margin: 15px 0;
 }
 
-.install-command {
-  background-color: #f0f0f0;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  font-family: monospace;
-}
-
-.command {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 5px 0;
-}
-
-.copy-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.copy-button:hover {
-  background-color: #ffc107;
-}
-
 .modal-buttons {
   text-align: center;
   margin-top: 15px;
@@ -309,18 +280,6 @@ button {
   text-align: center;
   font-size: 1.8em;
   margin-bottom: 15px;
-}
-
-.install-command {
-  background-color: #f0f0f0;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: monospace;
 }
 
 .project-card h3 {
@@ -417,111 +376,55 @@ button {
   background-color: #f9f9f9;
   text-align: center;
   margin: 2rem auto;
-  max-width: 1200px;
+  max-width: 1200px; /* Reduced the max-width for a narrower container */
 }
 
 .certifications-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  justify-content: center; /* Center the cards within the container */
 }
 
 .certification-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px;
-  text-align: left;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.certification-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-size: 0.8rem;
-}
-
-#certifications {
   padding: 20px;
-  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 2rem auto;
-  max-width: 1200px;
-  height: 410px;
-}
-
-.certifications-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.certification-card .button:hover {
-  background-color: #21e759;
-}
-
-#view-all {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-#view-all:hover {
-  background-color: #14dc32;
-}
-
-certification-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  width: 300px;
-  text-align: left;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centers content horizontally */
+  margin: 20px;
 }
 
 .certification-card h3 {
-  margin: 0 0 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .certification-card p {
-  margin: 0 0 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
 }
 
 .certification-card .button {
   display: inline-block;
-  padding: 10px 1uuuu0px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
   background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  margin: 0px 0px 0px 50px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.certification-card .button:hover {
+  background-color: #14dc32;
 }
 
 .certification-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -533,6 +436,39 @@ certification-card {
 .certification-card p a:visited {
   color: blue;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .certifications-container {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-card {
+    max-width: 100%;
+  }
+
+  .certification-card h3 {
+    font-size: 1em;
+  }
+
+  .certification-card p {
+    font-size: 0.8em;
+  }
+}
+
+#view-all {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#view-all:hover {
+  background-color: #14dc32;
 }
 
 #contact {
@@ -606,4 +542,12 @@ certification-card {
 
 .email-container a:hover {
   text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
 }
