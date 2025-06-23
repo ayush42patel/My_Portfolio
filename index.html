@@ -1,264 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayush Patel - Portfolio</title>
-  <link rel="icon" href="favicon_io/favicon.ico" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ayush Patel | Portfolio</title>
+  <link rel="icon" href="/favicon_io/favicon.ico" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav>
-      <h1>Ayush Patel</h1>
-      <div class="hamburger" id="hamburger">&#9776;</div>
-      <ul id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Ayush Patel</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://x.com/AyushPatel52715" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-42-patel/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>ABOUT ME</h2>
-    <div class="about-content">
-      <img src="Images/8.jpg" alt="Ayush Patel" class="profile-photo">
-      <p>I am Ayush Patel, a tech enthusiast with expertise in Python, SQL, HTML, and CSS, and I am currently expanding my skills with React, JavaScript, and data analytics. I am pursuing my BTECH in COMPUTER SCIENCE (DATA SCIENCE).I am passionate about applying tech solutions to real-world problems and have worked on projects.</p>
-    </div>
-  </section>
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Hello, I 'm <p class="text-primary">Ayush Patel</p></h2>
+            <p class="lead">Aspiring Data Analyst crafting insightful solutions through data and design.</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#project" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="Images/8-blur.png" alt="project Hero Image" class="img-fluid hero-img" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>PROJECTS</h2>
-    <div class="project-card">
-      <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 1: Smart Attendance System</h3>
-      <p style="text-align: left;"><strong>Brief of Project:</strong> A facial recognition-based attendance system for students.</p>
-      <br>
-      <p style="text-align: left;"><strong>Problem Statement:</strong> This project aims to solve the issue of manually tracking student attendance by leveraging facial recognition technology to provide an automated solution.</p>
-      <button class="view-more" onclick="showModal('modal1')">View Details</button>
-    </div>
-    
-  <div class="modal" id="modal1">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up"><h2>About</h2></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="Images/withoutbg.jpg" alt="Profile Image" class="img-fluid about-img">
+            </div>
+          </div>
 
-      <h3 style="text-align: center;"><strong>SMART ATTENDANCE SYSTEM</strong></h3>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+              <h2>Data Analyst</h2>
+              <p class="lead mb-4">I am a passionate data analyst at the early stage of my career, dedicated to uncovering meaningful insights from complex datasets, with a developing skill set in data cleaning, visualization, and statistical analysis.</p>
+              <p class="mb-4">I strive to turn raw data into impactful stories. My goal is to support strategic decision-making through thoughtful analysis. I am motivated by curiosity, problem-solving, and a desire to drive efficiency and innovation through data.</p>
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Ayush Patel</span>
+                    </div>
+                  </div>
 
-      <p><strong>Project Overview:</strong> This system uses facial recognition technology to automate the attendance marking process, allowing for quick and efficient tracking of student attendance.</p>
-      
-      <p style="text-align: left;"><strong>Status (In Progress):</strong><br><strong>Completed:</strong> Face recognition functionality using KNN and database is attached.<br><br>
-      <strong>Pending:</strong> User login authentication on Android app or Streamlit.</p> 
-      
-      <p><strong>Technologies Used:</strong> Python, OpenCV, SQLite</p>
-      <p><strong>Libraries:</strong> OpenCV, Keras, Scikit-Learn</p>  
-      <p><strong>Future Implementation:</strong> This system can be adopted in Indian educational institutions to streamline attendance and reduce errors. Future features could include multi-language support, parent notifications, and integration with student management systems.</p>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value">+91 9369468495</span>
+                    </div>
+                  </div>
 
-      <div style="text-align: center;">
-        <a href="https://github.com/ayush42patel/Smart_Attendance" target="_blank" class="button">GitHub Repository</a>
-        <!-- <a href="https://deployed-link.com" target="_blank" class="button">Live Demo</a> -->
-        <!-- <a href="javascript:void(0)" onclick="alert('Live Demo not available in this release.')" class="button">Live Demo</a>    -->
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">ayush42patel@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Nationality</span>
+                      <span class="value">Indian</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up"><h2>Resume</h2></div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Babu Banarasi Das Institute of Technology and  Management</h4>
+                      <span class="period">2022-2026</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor of Technology</h3>
+                      <p class="description">Computer Science Engineering (Data Science)</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Central Academy</h4>
+                      <span class="period">2022</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">12 th</h3>
+                      <p class="description">PCM with Computers , CBSE</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Central Academy</h4>
+                      <span class="period">2020</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">10 th</h3>
+                      <p class="description">CBSE</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center mb-4">
+                  <a href="Resume/Ayush Resume.pdf" download class="btn btn-primary">
+                  <i class="bi bi-download me-2"></i>Download Resume</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+    <section id="project" class="project section"><!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Project</h2>
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-6 col-md-6 project-item isotope-item filter-web">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Images/smart_attendance.jpeg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="project-content">
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 1: Smart Attendance System</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong> A facial recognition-based attendance system for students.</p>
+                  <br>
+                  <p style="text-align: left;"><strong>Problem Statement:</strong> This project aims to solve the issue of manually tracking student attendance by leveraging facial recognition technology to provide an automated solution.</p>
+                  <button class="view-more" onclick="showModal('modal1')">View Details</button>
+                </div>
+              </div>
+
+              <div class="modal" id="modal1">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal1')">&times;</span>
+                  <h3 style="text-align: center;"><strong>SMART ATTENDANCE SYSTEM</strong></h3>
+                  <p><strong>Project Overview:</strong> This system uses facial recognition technology to automate the attendance marking process, allowing for quick and efficient tracking of student attendance.</p>
+                  <p style="text-align: left;"><strong>Status (In Progress):</strong><br><strong>Completed:</strong> Face recognition functionality using KNN and database is attached.<br><br>
+                  <strong>Pending:</strong> User login authentication on Android app or Streamlit.</p> 
+                  <p><strong>Technologies Used:</strong> Python, OpenCV, SQLite</p>
+                  <p><strong>Libraries:</strong> OpenCV, Keras, Scikit-Learn</p>  
+                  <p><strong>Future Implementation:</strong> This system can be adopted in Indian educational institutions to streamline attendance and reduce errors. Future features could include multi-language support, parent notifications, and integration with student management systems.</p>
+                  <div style="text-align: center;">
+                    <a href="https://github.com/ayush42patel/Smart_Attendance" target="_blank" class="view-more">GitHub Repository</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End project Item -->
+
+            <div class="col-lg-6 col-md-6 project-item isotope-item filter-graphics">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Images/Speed_Detection.jpeg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="project-content">
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 2: Speed Detection System</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong> A system for detecting and monitoring vehicle speed using OpenCV.</p>
+                  <br>
+                  <p style="text-align: left;"><strong>Problem Statement:</strong> The project aims to automate speed detection of vehicles using video processing to monitor traffic and enforce speed regulations efficiently.</p>
+                  <button class="view-more" onclick="showModal('modal2')">View Details</button>
+                </div>
+              </div>
+              <div class="modal" id="modal2">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal2')">&times;</span>
+                  <h3 style="text-align: center;"><strong>SPEED DETECTION SYSTEM</strong></h3>
+                  <p><strong>Project Overview:</strong> This system leverages OpenCV to process video streams and detect vehicle speed in real-time using model training techniques.</p>
+
+                  <p style="text-align: left;">
+                    <strong>Status (In Progress):</strong><br>
+                    <strong>Completed:</strong> Video input processing and basic speed calculation using image processing.<br><br>
+                    <strong>Pending:</strong> Advanced model training for accurate speed estimation and integration with real-world traffic datasets.
+                  </p> 
+
+                  <p><strong>Technologies Used:</strong> Python, OpenCV, Machine Learning</p>
+                  <p><strong>Libraries:</strong> OpenCV, NumPy, Pandas, Scikit-Learn</p>   
+                  <p><strong>Future Implementation:</strong> This system can be applied in traffic management systems for automated speed monitoring, helping reduce accidents and enforcing speed regulations.</p>
+                
+                  <div style="text-align: center;">
+                    <a href="https://github.com/ayush42patel/Speed-Detection" target="_blank" class="view-more">GitHub Repository</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End project Item -->
+
+            <div class="col-lg-6 col-md-6 project-item isotope-item filter-motion">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Images/sales_dashboard.jpeg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="project-content">
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 3: Multi-Product Sales Analysis Dashboard</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong> A Power BI dashboard that visualizes sales data of various product categories including classic cars, motorcycles, planes, and more.</p>
+                  <br>
+                  <p style="text-align: left;"><strong>Problem Statement:</strong> The aim is to extract insights from raw product sales data, helping in decision-making by visualizing trends and comparisons across products, regions, and time.</p>
+                  <button class="view-more" onclick="showModal('modal3')">View Details</button>
+                </div>
+              </div>
+                <div class="modal" id="modal3">
+                  <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal3')">&times;</span>
+                  <h3 style="text-align: center;"><strong>MULTI-PRODUCT SALES ANALYSIS DASHBOARD</strong></h3>
+                  <p><strong>Project Overview:</strong> Designed a multi-page dashboard in Power BI to analyze cleaned product sales data, offering deep insights using dynamic visuals and filters.</p>
+
+                  <Total><strong>Dashboard Features (Page 1):</strong>
+                    <li>Total sales, profit %, most ordered product</li>
+                    <li>Graphs: sales by month, sum of quantity by year</li>
+                    <li>Filters: Order Year, City, Employee Name, Product Line</li>
+                    <li>Visuals: Top 5 and Bottom 5 selling products, sales by product line</li>
+                  <p><strong>Dashboard Features (Page 2):</strong></p>
+                    <li>Sum of sales by year and product name</li>
+                    <li>Sum of quantity ordered by product line and name</li>
+                  <p><strong>Tools Used:</strong> Power BI, Power Query</p>
+                  <p><strong>Data Cleaning:</strong> Performed null handling, duplicate removal, formatting, and standardization for accurate visualization.</p>
+                  <div style="text-align: center;">
+                    <a href="https://github.com/ayush42patel/Power-Bi" target="_blank" class="view-more">GitHub Repository</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End project Item -->
+
+            <div class="col-lg-6 col-md-6 project-item isotope-item filter-brand">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Images/portfolio.jpg" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="project-content">
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 4: Portfolio Website</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong> A responsive personal portfolio website to showcase projects, skills, and certifications.</p>
+                  <br>
+                  <p style="text-align: left;"><strong>Problem Statement:</strong> This project was developed to create a centralized, professional web presence that highlights technical skills and achievements in an organized manner.</p>
+                  <button class="view-more" onclick="showModal('modal4')">View Details</button>
+                </div>
+              </div>
+              <div class="modal" id="modal4">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal4')">&times;</span>
+                  <h3 style="text-align: center;"><strong>PORTFOLIO WEBSITE</strong></h3>
+                  <p><strong>Project Overview:</strong> A fully responsive and interactive portfolio built with HTML, CSS, and JavaScript to present professional information and technical projects in a user-friendly format.</p>
+
+                  <p style="text-align: left;">
+                    <strong>Status:</strong> Completed<br>
+                    <strong>Features:</strong> Responsive layout, project modals, skills section, certification display, contact section with form/QR, and deployment via Vercel.
+                  </p> 
+
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+                  <p><strong>Libraries/Tools:</strong> Google Fonts, Font Awesome, Git, Vercel</p>   
+                  <p><strong>Future Implementation:</strong> Will include a blog section, dark mode, and analytics integration for tracking visitor engagement.</p>
+                
+                  <div style="text-align: center;">
+                    <a href="https://github.com/ayush42patel/My_Portfolio" target="_blank" class="view-more">GitHub Repository</a>
+                    <a href="https://ayush42patel.github.io/My_Portfolio/" target="_blank" class="view-more">Github pages</a>
+                    <a  href="https://ayushportfolio2024.vercel.app/" target="_blank" class="view-more">Vercel</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End project Item -->
+          </div><!-- End project Container -->
+        </div>
+      </div>
+    </section><!-- /project Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up"><h2>Skills</h2></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4 skills-animation">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <div class="skill-card">
+                <img src="Icon/python.jpeg" alt="Python Icon" class="skill-icon">
+                <h4>Python</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <div class="skill-card">
+              <img src="Icon/sql.jpeg" alt="SQL Icon" class="skill-icon">
+              <h4>SQL</h4>
+              <div class="skill-progress">
+                  <div class="skill-bar" style="width: 90%;">90%</div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+               <div class="skill-card">
+                <img src="Icon/HTML.jpeg" alt="HTML Icon" class="skill-icon">
+                <h4>HTML</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 80%;">80%</div>
+                </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <div class="skill-card">
+                <img src="Icon/CSS.jpeg" alt="CSS Icon" class="skill-icon">
+                <h4>CSS</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 70%;">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <div class="skill-card">
+                <img src="Icon/C.jpeg" alt="C Icon" class="skill-icon">
+                <h4>C</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 80%;">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <div class="skill-card">
+                <img src="Icon/C++.jpeg" alt="C++ Icon" class="skill-icon">
+                <h4>C++</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 70%;">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <div class="skill-card">
+                <img src="Icon/Microsoft-Power-BI-Logo.jpeg" alt="Power-Bi Icon" class="skill-icon">
+                <h4>Power-Bi</h4>
+                <div class="skill-progress">
+                  <div class="skill-bar" style="width: 70%;">70%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+
+    <!-- certifications Section -->
+    <section id="Certifications" class="certifications section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up"><h2>Certifications</h2></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="certification-card">
+              <h3>Python: Zero to Hero Certification</h3>
+              <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+              <a href="https://www.guvi.in/share-certificate/Chk0bI7134107W608P" target="_blank" class="btn">View Credential</a>
+            </div>
+          </div><!-- End certifications Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="certification-card">
+              <h3>Natural Language Processing Using Python</h3>
+              <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+              <a href="https://www.guvi.in/share-certificate/D4615110J274eZGb8E" target="_blank" class="btn">View Credential</a>
+            </div>
+          </div><!-- End certifications Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="certification-card">
+              <h3>MY SQL</h3>
+              <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+              <a href="https://www.guvi.in/share-certificate/C1O7M67rU39198s79G" target="_blank" class="btn">View Credential</a>
+            </div>
+          </div><!-- End certifications Item -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="certification-card">
+              <h3>Introduction to Data Engineering and BigData</h3>
+              <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
+              <a href="https://www.guvi.in/share-certificate/7372txqg1E07r436zD" target="_blank" class="btn">View Credential</a>
+            </div>
+          </div><!-- End certifications Item -->
+
+          <div class="text-center mt-4">
+            <a href="certifications.html" class="view-more">View All Certificates</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /certifications Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="container section-title" data-aos="fade-up"><h2>Contact</h2></div>
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>ayush42patel@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>+91 9369468495</span>
+                </div>
+
+                <div class="info-item d-flex align-items-center mb-3">
+                  <i class="bi bi-geo-alt me-3 fs-5"></i>
+                  <span>Lucknow, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+                <div class="text-center mt-4">
+                  <img src="Icon/qrcode.png" alt="Google Form QR" class="img-fluid mb-3" style="max-width: 200px;">
+                  <br>
+                  <a href="https://forms.gle/fkHWDrskmrC8Vy8PA" target="_blank" class="btn btn-outline-primary">Fill Google Form</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ayush Patel</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/AyushPatel52715"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-42-patel"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
-  </div>
-  <div class="project-card">
-  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 2: Speed Detection System</h3>
-  <p style="text-align: left;"><strong>Brief of Project:</strong> A system for detecting and monitoring vehicle speed using OpenCV.</p>
-  <br>
-  <p style="text-align: left;"><strong>Problem Statement:</strong> The project aims to automate speed detection of vehicles using video processing to monitor traffic and enforce speed regulations efficiently.</p>
-  <button class="view-more" onclick="showModal('modal2')">View Details</button>
-</div>
 
-<div class="modal" id="modal2">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h3 style="text-align: center;"><strong>SPEED DETECTION SYSTEM</strong></h3>
-    <p><strong>Project Overview:</strong> This system leverages OpenCV to process video streams and detect vehicle speed in real-time using model training techniques.</p>
-    
-    <p style="text-align: left;">
-      <strong>Status (In Progress):</strong><br>
-      <strong>Completed:</strong> Video input processing and basic speed calculation using image processing.<br><br>
-      <strong>Pending:</strong> Advanced model training for accurate speed estimation and integration with real-world traffic datasets.
-    </p> 
-    
-    <p><strong>Technologies Used:</strong> Python, OpenCV, Machine Learning</p>
-    <p><strong>Libraries:</strong> OpenCV, NumPy, Pandas, Scikit-Learn</p>   
-    <p><strong>Future Implementation:</strong> This system can be applied in traffic management systems for automated speed monitoring, helping reduce accidents and enforcing speed regulations.</p>
-
-    <div style="text-align: center;">
-      <a href="https://github.com/ayush42patel/Speed-Detection" target="_blank" class="button">GitHub Repository</a>
-      <!-- <a href="https://deployed-link.com" target="_blank" class="button">Live Demo</a> -->
-      <!-- <a href="javascript:void(0)" onclick="alert('Live Demo not available in this')" class="button">Live Demo</a> -->
-    </div>
-  </div>
-</div>
-<div class="project-card">
-  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 3: Multi-Product Sales Analysis Dashboard</h3>
-  <p style="text-align: left;"><strong>Brief of Project:</strong> A Power BI dashboard that visualizes sales data of various product categories including classic cars, motorcycles, planes, and more.</p>
-  <br>
-  <p style="text-align: left;"><strong>Problem Statement:</strong> The aim is to extract insights from raw product sales data, helping in decision-making by visualizing trends and comparisons across products, regions, and time.</p>
-  <button class="view-more" onclick="showModal('modal3')">View Details</button>
-</div>
-
-<div class="modal" id="modal3">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <h3 style="text-align: center;"><strong>MULTI-PRODUCT SALES ANALYSIS DASHBOARD</strong></h3>
-    
-    <p><strong>Project Overview:</strong> Designed a multi-page dashboard in Power BI to analyze cleaned product sales data, offering deep insights using dynamic visuals and filters.</p>
-    
-    <Total><strong>Dashboard Features (Page 1):</strong>
-      <li>Total sales, profit %, most ordered product</li>
-      <li>Graphs: sales by month, sum of quantity by year</li>
-      <li>Filters: Order Year, City, Employee Name, Product Line</li>
-      <li>Visuals: Top 5 and Bottom 5 selling products, sales by product line</li>
-
-    <p><strong>Dashboard Features (Page 2):</strong></p>
-      <li>Sum of sales by year and product name</li>
-      <li>Sum of quantity ordered by product line and name</li>
-
-    <p><strong>Tools Used:</strong> Power BI, Power Query</p>
-    <p><strong>Data Cleaning:</strong> Performed null handling, duplicate removal, formatting, and standardization for accurate visualization.</p>
-
-    <div style="text-align: center;">
-      <a href="https://github.com/ayush42patel/Power-Bi" target="_blank" class="button">GitHub Repository</a>
-      <!-- <a href="https://your-dashboard-link.com" target="_blank" class="button">Live Dashboard</a> -->
-    </div>
-  </div>
-</div>
-<div class="project-card">
-  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 4: Portfolio Website</h3>
-  <p style="text-align: left;"><strong>Brief of Project:</strong> A responsive personal portfolio website to showcase projects, skills, and certifications.</p>
-  <br>
-  <p style="text-align: left;"><strong>Problem Statement:</strong> This project was developed to create a centralized, professional web presence that highlights technical skills and achievements in an organized manner.</p>
-  <button class="view-more" onclick="showModal('modal4')">View Details</button>
-</div>
-
-<div class="modal" id="modal4">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <h3 style="text-align: center;"><strong>PORTFOLIO WEBSITE</strong></h3>
-    <p><strong>Project Overview:</strong> A fully responsive and interactive portfolio built with HTML, CSS, and JavaScript to present professional information and technical projects in a user-friendly format.</p>
-    
-    <p style="text-align: left;">
-      <strong>Status:</strong> Completed<br>
-      <strong>Features:</strong> Responsive layout, project modals, skills section, certification display, contact section with form/QR, and deployment via Vercel.
-    </p> 
-    
-    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
-    <p><strong>Libraries/Tools:</strong> Google Fonts, Font Awesome, Git, Vercel</p>   
-    <p><strong>Future Implementation:</strong> Will include a blog section, dark mode, and analytics integration for tracking visitor engagement.</p>
-
-    <div style="text-align: center;">
-      <a href="https://github.com/ayush42patel/My_Portfolio" target="_blank" class="button">GitHub Repository</a>
-      <a href="https://ayush42patel.github.io/My_Portfolio/" target="_blank" class="button">Github pages</a>
-      <a  href="https://ayushportfolio2024.vercel.app/" target="_blank" class="button">Vercel</a>
-    </div>
-  </div>
-</div>
-</section>
-
-<section id="skills">
-  <h2>SKILLS</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="Icon/python.jpeg" alt="Python Icon" class="skill-icon">
-      <h4>Python</h4>
-    </div>
-    
-    <div class="skill-card">
-      <img src="Icon/sql.jpeg" alt="SQL Icon" class="skill-icon">
-      <h4>SQL</h4>    
-    </div>
-
-    <div class="skill-card">
-      <img src="Icon/HTML.jpeg" alt="HTML Icon" class="skill-icon">
-      <h4>HTML</h4>
-    </div>
-
-    <div class="skill-card">
-      <img src="Icon/CSS.jpeg" alt="CSS Icon" class="skill-icon">
-      <h4>CSS</h4>
-    </div>
-
-    <div class="skill-card">
-      <img src="Icon/C.jpeg" alt="C Icon" class="skill-icon">
-      <h4>C</h4>
-    </div>
-
-    <div class="skill-card">
-      <img src="Icon/C++.jpeg" alt="C++ Icon" class="skill-icon">
-      <h4>C++</h4>
-    </div>
-
-</section>
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="certification-cards">
-    <div class="certification-card">
-      <h3>Python: Zero to Hero Certification</h3>
-      <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
-      <a href="https://www.guvi.in/share-certificate/Chk0bI7134107W608P" target="_blank" class="button">View Credential</a>
-    </div>
-    <div class="certification-card">
-      <h3>Nodejs and Expressjs Bootcamp</h3>
-      <p>Issued by <a href="https://www.devtown.in/" target="_blank">DevTown</a></p>
-      <a href="https://cert.devtown.in/verify/Z2jeMnM" target="_blank" class="button">View Credential</a>
-    </div>
-    <div class="certification-card">
-      <h3>Chat GPT for Programmers</h3>
-      <p>Issued by <a href="https://www.guvi.in/" target="_blank">Guvi</a></p>
-      <a href="https://www.guvi.in/share-certificate/Fc935vdZ271m28481J" target="_blank" class="button">View Credential</a>
-    </div>
-  </div>
-  <a href="Certification.html" id="view-all">View All</a>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-container">
-    <!-- Social Links -->
-    <div class="social-links">
-      <div class="social-item">
-        <a href="https://www.linkedin.com/in/ayush-patel-88229027b/" target="_blank">
-          <img src="Icon/Linkedin.jpeg" alt="LinkedIn">
-        </a>
-        <p>LinkedIn</p>
-      </div>
-      <div class="social-item">
-        <a href="https://x.com/AyushPatel52715" target="_blank">
-          <img src="Icon/X.jpeg" alt="X">
-        </a>
-        <p>X</p>
-      </div>
-    </div>
-
-    <!-- QR Code -->
-    <div class="qr-code-container">
-      <img src="Icon/qrcode.png" alt="QR Code" class="qr-code">
-      <P>Scan The QR COde</P>
-    </div>
-
-    <!-- Google Form Link -->
-    <div class="form-link-container">
-      <p>or</p><br>
-      <a href="https://forms.gle/fkHWDrskmrC8Vy8PA" target="_blank" class="form-button">Fill Out Form</a>
-    </div>
-
-    <!-- Email -->
-    <div class="email-container">
-      <p>Contact Email: <a href="mailto:your-email@example.com">ayush42patel@gmail.com</a></p>
-    </div>
-  </div>
-</section>
-
-
-</section>
-  <footer>
-    <p>&copy; 2024 Ayush Patel. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scroll Top -->
+  <a href="#home" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
 </body>
+
 </html>
