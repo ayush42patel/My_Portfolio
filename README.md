@@ -73,19 +73,14 @@ This is a **fully redesigned** and feature-rich portfolio website with an enhanc
 portfolio/
 │
 ├── index.html
-├── about.html
-├── resume.html
 ├── certifications.html
-├── contact.html
 │
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js (optional)
-├── assets/
-│   ├── images/
-│   ├── certificates/
-│   └── favicon/
+├── main.css
+├── main.js
+|
+├── images/
+├── Icon/
+├── favicon/
 ├── resume/
 │   └── Ayush-Patel-Resume.pdf
 ├── README.md
