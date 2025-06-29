@@ -9,7 +9,7 @@ This project represents my journey as a student and aspiring data professional, 
 ## 🚀 Live Demo
 
 👉 https://ayushportfolio2024.vercel.app/
-👉 ttps://ayush42patel.github.io/My_Portfolio/
+👉 https://ayush42patel.github.io/My_Portfolio/
 
 ---
 
