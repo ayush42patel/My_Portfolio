@@ -77,7 +77,7 @@ portfolio/
 │
 ├── main.css
 ├── main.js
-|
+│
 ├── images/
 ├── Icon/
 ├── favicon/
