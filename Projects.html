@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ayush Patel | Portfolio</title>
+  <link rel="icon" href="/favicon_io/favicon.ico" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+  <style>
+    .back-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 16px;
+      z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .back-home a {
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #e87532;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: #e87532;
+      transition: all 0.3s ease;
+    }
+
+    .back-home a:hover {
+      background-color: #2fe225;
+      border: 1px solid #2fe225;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="index-page">
+  <!-- <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Ayush Patel</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://x.com/AyushPatel52715" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-42-patel/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header> -->
+  <div class="back-home">
+      <a href="index.html">← Back to Home</a>
+  </div>
+
+  <main class="main">
+    <section id="project" class="project section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>All Projects</h2>
+        <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-6 col-md-6 project-item isotope-item filter-web">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/titanic.jpg" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 5: Titanic Survival Prediciton</h3>
+                <p style="text-align: left;"><strong>Brief of Project:</strong> A machine learning project predicting Titanic passenger survival using classification models in Google Collab.</p>
+                <br>
+                <p style="text-align: left;"><strong>Problem Statement:</strong> Built a predictive model to determine passenger survival based on demographic and socio-economic features from Titanic dataset.</p>
+                <button class="view-more" onclick="showModal('modal5')">View Details</button>
+              </div>
+            </div>
+
+            <div class="modal" id="modal5">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <h3 style="text-align: center;"><strong>TITANIC SURVIVAL PREDICTION</strong></h3>
+                <p><strong>Project Overview:</strong> This project involved data cleaning, feature engineering, and applying machine learning models like Logistic Regression and Decision Tree Classifier in Google Collab to predict survival outcomes of Titanic passengers</p>
+                <p style="text-align: left;">
+                  <strong>Status:</strong> Completed<br>
+                  <strong>Features:</strong> Exploratory Data Analysis, model training, evaluation (accuracy, confusion matrix), and visualization.
+                </p>
+                <p><strong>Technologies Used:</strong> Python, Google Collab.</p>
+                <p><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn</p>
+                
+                <div style="text-align: center;">
+                  <a href="https://github.com/ayush42patel/CodeSoft_Task1" target="_blank" class="view-more">Github Repository</a>
+                  <a href="https://www.kaggle.com/datasets/yasserh/titanic-dataset" target="_blank" class="view-more">DataSet</a>
+                  <a href="https://colab.research.google.com/drive/1kxq1kqqG9Dxpz4R1ZirhAcBYi91WVwQO?usp=sharing" target="_blank" class="view-more">Google Collab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-6 col-md-6 project-item isotope-item filter-data">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/movies.jpg" class="img-fluid" alt="Movie Rating Prediction" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 6: Movie Rating Prediction</h3>
+                <p style="text-align: left;"><strong>Brief of Project:</strong> Built a machine learning model to predict movie ratings based on genre, cast, director, and other metadata.</p>
+                <br>
+                <p style="text-align: left;"><strong>Problem Statement:</strong> Predicting the IMDb-style rating of a movie before release to help stakeholders make informed marketing and budgeting decisions.</p>
+                <button class="view-more" onclick="showModal('modal6')">View Details</button>
+              </div>
+            </div>
+
+            <div class="modal" id="modal6">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <h3 style="text-align: center;"><strong>MOVIE RATING PREDICTION</strong></h3>
+              
+                <p><strong>Project Overview:</strong> Applied regression techniques to analyze and predict movie ratings using metadata like genre, duration, cast popularity, and budget. Performed feature engineering and model tuning to improve accuracy.</p>
+              
+                <p style="text-align: left;">
+                  <strong>Status:</strong> Completed<br>
+                  <strong>Features:</strong> Data preprocessing, handling missing values, one-hot encoding, model training with Random Forest and Linear Regression, accuracy evaluation.
+                </p>
+              
+                <p><strong>Technologies Used:</strong> Python, Google Collab.</p>
+                <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn.</p>
+              
+                <div style="text-align: center;">
+                  <a href="https://github.com/ayush42patel/CodeSoft_Task2" target="_blank" class="view-more">Github Repository</a>
+                  <a href="https://www.kaggle.com/datasets/adrianmcmahon/imdb-india-movies" target="_blank" class="view-more">DataSet</a>
+                  <a href="https://colab.research.google.com/drive/1lX2mzilszKKWeI25QzVupnq3tgmE6WF-?usp=sharing" target="_blank" class="view-more">Google Collab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project-item isotope-item filter-data">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/iris_flower.jpg" class="img-fluid" alt="Iris Flower Classification" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 7: Iris Flower Classification</h3>
+                <p style="text-align: left;"><strong>Brief of Project:</strong> Developed a classification model to identify iris flower species based on petal and sepal dimensions.</p>
+                <br>
+                <p style="text-align: left;"><strong>Problem Statement:</strong> To accurately classify the type of iris flower (Setosa, Versicolor, or Virginica) using machine learning on the classic Iris dataset.</p>
+                <button class="view-more" onclick="showModal('modal7')">View Details</button>
+              </div>
+            </div>
+          
+            <div class="modal" id="modal7">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <h3 style="text-align: center;"><strong>IRIS FLOWER CLASSIFICATION</strong></h3>
+              
+                <p><strong>Project Overview:</strong> A machine learning model using supervised learning to classify iris flowers based on their physical characteristics. Compared multiple models for performance.</p>
+              
+                <p style="text-align: left;">
+                  <strong>Status:</strong> Completed<br>
+                  <strong>Features:</strong> Data preprocessing, visualization, model training with Logistic Regression, SVM, and KNN, confusion matrix evaluation.
+                </p>
+              
+                <p><strong>Technologies Used:</strong> Python, Google Collab.</p>
+                <p><strong>Libraries:</strong> Scikit-learn, Pandas, Matplotlib, Seaborn</p>
+              
+                <div style="text-align: center;">
+                  <a href="https://github.com/ayush42patel/CodeSoft_Task3" target="_blank" class="view-more">Github Repository</a>
+                  <a href="https://www.kaggle.com/datasets/arshid/iris-flower-dataset" target="_blank" class="view-more">Dataset</a>
+                  <a href="https://colab.research.google.com/drive/1XtPExaOYjxO86GFOdk4TVmZzcM0ENVb3?usp=sharing" target="_blank" class="view-more">Google Collab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project-item isotope-item filter-data">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/credit_card.jpg" class="img-fluid" alt="Credit Card Fraud Detection" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 8: Credit Card Fraud Detection</h3>
+                <p style="text-align: left;"><strong>Brief of Project:</strong> Built a machine learning model to detect fraudulent transactions from anonymized credit card data.</p>
+                <br>
+                <p style="text-align: left;"><strong>Problem Statement:</strong>This project aims to detect Credit card Frauds using historical transaction data and anomaly detection methods.</p>
+                <button class="view-more" onclick="showModal('modal8')">View Details</button>
+              </div>
+            </div>
+          
+            <div class="modal" id="modal8">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+                <h3 style="text-align: center;"><strong>CREDIT CARD FRAUD DETECTION</strong></h3>
+              
+                <p><strong>Project Overview:</strong> Applied machine learning algorithms to a highly imbalanced dataset to classify transactions as fraudulent or legitimate.</p>
+              
+                <p style="text-align: left;">
+                  <strong>Status:</strong> Completed<br>
+                  <strong>Features:</strong> Data preprocessing, SMOTE oversampling, logistic regression, random forest classifier, confusion matrix, ROC-AUC evaluation.
+                </p>
+              
+                <p><strong>Technologies Used:</strong> Python, Google Collab</p>
+                <p><strong>Libraries:</strong> Scikit-learn, Pandas, Matplotlib, Seaborn.</p>
+              
+                <div style="text-align: center;">
+                  <a href="https://github.com/ayush42patel/CodeSoft_Task5" target="_blank" class="view-more">Github Repository</a>
+                  <a href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud" target="_blank" class="view-more">DataSet</a>
+                  <a href="https://colab.research.google.com/drive/1uqPlzN35chvUUSZxrsCGvktkSqL_k8c8?usp=sharing" target="_blank" class="view-more">Google Collab</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project-item isotope-item filter-graphics">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="Images/Speed_Detection.jpeg" class="img-fluid" alt="" loading="lazy">
+              </div>
+              <div class="project-content">
+                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 9: Speed Detection System</h3>
+                <p style="text-align: left;"><strong>Brief of Project:</strong> A system for detecting and monitoring vehicle speed using OpenCV.</p>
+                <br>
+                <p style="text-align: left;"><strong>Problem Statement:</strong> The project aims to automate speed detection of vehicles using video processing to monitor traffic and enforce speed regulations efficiently.</p>
+                <button class="view-more" onclick="showModal('modal9')">View Details</button>
+              </div>
+              </div>
+            <div class="modal" id="modal9">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+                <h3 style="text-align: center;"><strong>SPEED DETECTION SYSTEM</strong></h3>
+                <p><strong>Project Overview:</strong> This system leverages OpenCV to process video streams and detect vehicle speed in real-time using model training techniques.</p>
+                <p style="text-align: left;">
+                  <strong>Status (In Progress):</strong><br>
+                  <strong>Completed:</strong> Video input processing and basic speed calculation using image processing.<br><br>
+                  <strong>Pending:</strong> Advanced model training for accurate speed estimation and integration with real-world traffic datasets.
+                </p> 
+                <p><strong>Technologies Used:</strong> Python, OpenCV, Machine Learning</p>
+                <p><strong>Libraries:</strong> OpenCV, NumPy, Pandas, Scikit-Learn</p>   
+                <p><strong>Future Implementation:</strong> This system can be applied in traffic management systems for automated speed monitoring, helping reduce accidents and enforcing speed regulations.</p>
+              
+                <div style="text-align: center;">
+                  <a href="https://github.com/ayush42patel/Speed-Detection" target="_blank" class="view-more">GitHub Repository</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Ayush Patel</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/AyushPatel52715"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/ayush-42-patel"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#home" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+</body>
+</html>
