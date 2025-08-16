@@ -43,6 +43,7 @@
       <div class="header-social-links">
         <a href="https://x.com/AyushPatel52715" class="twitter"><i class="bi bi-twitter-x"></i></a>
         <a href="https://www.linkedin.com/in/ayush-42-patel/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ayush42patel" target="_blank"><i class="bi bi-github"></i></a>
       </div>
     </div>
   </header>
@@ -129,8 +130,8 @@
     <section id="resume" class="resume section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up"><h2>Resume</h2></div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+         <div class="row">
           <div class="col-12">
             <div class="resume-wrapper">
               <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
@@ -254,41 +255,40 @@
               </div>
             </div><!-- End project Item -->
 
-            <div class="col-lg-6 col-md-6 project-item isotope-item filter-motion">
+            <div class="col-lg-6 col-md-6 project-item isotope-item filter-web">
               <div class="project-card">
                 <div class="project-image">
-                  <img src="Images/Pizza.jpeg" class="img-fluid" alt="Pizza Sales Dashboard" loading="lazy">
+                  <img src="Images/Smart_Energy.jpg" class="img-fluid" alt="Smart Home Energy Consumption Forecasting" loading="lazy">
                 </div>
                 <div class="project-content">
-                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 3: Pizza Sales Dashboard</h3>
-                  <p style="text-align: left;"><strong>Brief of Project:</strong> A detailed Power BI dashboard analyzing pizza sales performance, order trends, and product profitability across time slots, sizes, and categories.</p>
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 3: Smart Home Energy Consumption Forecasting</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong> A Streamlit-based machine learning app that predicts energy usage in smart homes using Random Forest Regression and contextual IoT data.</p>
                   <br>
-                  <p style="text-align: left;"><strong>Problem Statement:</strong> Built to extract actionable insights from a pizza sales dataset to help business optimize marketing, menu planning, and time-slot performance.</p>
+                  <p style="text-align: left;"><strong>Problem Statement:</strong> Built an intelligent energy forecasting system to help users optimize energy consumption and promote sustainable living.</p>
                   <button class="view-more" onclick="showModal('modal3')">View Details</button>
                 </div>
               </div>
+            
               <div class="modal" id="modal3">
                 <div class="modal-content">
                   <span class="close" onclick="closeModal('modal3')">&times;</span>
-                  <h3 style="text-align: center;"><strong>PIZZA SALES DASHBOARD</strong></h3>
-                  <p><strong>Project Overview:</strong> Created a comprehensive Power BI dashboard with interactive pages and tooltips to understand pizza sales, profit margins, order frequency, and top/bottom performers.</p>
-                  <p><strong>Dashboard Features (Page 1):</strong></p>
-                    <li>Visuals: Total Sales, Most Ordered Pizza, Profit, Bottom and Top 5 Pizza Sales, Quantity by Category</li>
-                    <li>Graphs: Total Sales by Day Name, Total Sales by Day, Total Orders by Day Name.</li>
-                    <li>Slicers: Category, Time Slot, Pizza Size, Pizza Name, Month</li>
-                    <li>Tooltips: Total Orders by Time Slot , Total Sales by Time Slot</li>
-                  <p><strong>Dashboard Features (Page 2):</strong></p>
-                    <li>Total Sales by Category, Total Sales by Quarter</li>
-                    <li>Total Quantity by Pizza Name</li>
-                    <li>Table: Sales by Time Slot and Month (Afternoon, Evening, Morning, Night)</li>
-                    <li>Decomposition Tree: Total Sales → Month → Time Slot → Pizza Name</li>
-                  <p><strong>Tools Used:</strong> Power BI, DAX, Power Query</p>
+                  <h3 style="text-align: center;"><strong>SMART HOME ENERGY CONSUMPTION FORECASTING</strong></h3>
+                  <p><strong>Project Overview:</strong> Developed during our Summer Internship at Lernovate,BBDITM. The system predicts household energy usage based on appliance type, weather, and time features. Implemented with a tuned Random Forest Regressor using RandomizedSearchCV and deployed via Streamlit.</p>
+                  <p style="text-align: left;">
+                    <strong>Status:</strong> Completed<br>
+                    <strong>Features:</strong> Data preprocessing pipeline, hyperparameter tuning, interactive predictions, and real-time visualization.<br>
+                    <strong>Team Members:</strong> Ayush Patel, Adarsh Srivastava , Aditya Nigam , Praveen Chaudhary
+                  </p>
+                  <p><strong>Technologies Used:</strong> Python, Streamlit, Scikit-learn</p>
+                  <p><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</p>
+                
                   <div style="text-align: center;">
-                    <a href="https://github.com/ayush42patel/Pizza-Sales-Dashboard" target="_blank" class="view-more">GitHub Repository</a>
+                    <a href="https://github.com/Adarsh-2158/smart-home-energy-predictor" target="_blank" class="view-more">GitHub Repository</a>
+                    <a href="https://smartenergyconsumptionforecast-asapanpc.streamlit.app/" target="_blank" class="view-more">Live Application</a>
                   </div>
                 </div>
               </div>
-            </div><!-- End project Item -->
+            </div>
 
             <div class="col-lg-6 col-md-6 project-item isotope-item filter-brand">
               <div class="project-card">
@@ -330,7 +330,7 @@
           </div><!-- End project Container -->
         </div>
         <div class="text-center">
-          <a href="Projects.html" target="_blank" class="view">View More Projects</a>
+          <a href="Projects.html" class="view">View More Projects</a>
         </div>
       </div>
     </section><!-- /project Section -->
@@ -345,9 +345,6 @@
               <div class="skill-card">
                 <img src="Icon/python.jpeg" alt="Python Icon" class="skill-icon">
                 <h4>Python</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 90%;">90%</div>
-                </div>
               </div>
             </div>
           </div>
@@ -355,12 +352,9 @@
           <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
             <div class="skill-box">
               <div class="skill-card">
-              <img src="Icon/sql.jpeg" alt="SQL Icon" class="skill-icon">
-              <h4>SQL</h4>
-              <div class="skill-progress">
-                  <div class="skill-bar" style="width: 90%;">90%</div>
+                <img src="Icon/sql.jpeg" alt="SQL Icon" class="skill-icon">
+                <h4>SQL</h4>
               </div>
-            </div>
             </div>
           </div>
 
@@ -368,11 +362,8 @@
             <div class="skill-box">
                <div class="skill-card">
                 <img src="Icon/HTML.jpeg" alt="HTML Icon" class="skill-icon">
-                <h4>HTML</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 80%;">80%</div>
-                </div>
-                </div>
+                <h4>HTML</h4>  
+              </div>
             </div>
           </div>
 
@@ -381,21 +372,6 @@
               <div class="skill-card">
                 <img src="Icon/CSS.jpeg" alt="CSS Icon" class="skill-icon">
                 <h4>CSS</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 70%;">70%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box">
-              <div class="skill-card">
-                <img src="Icon/C.jpeg" alt="C Icon" class="skill-icon">
-                <h4>C</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 80%;">80%</div>
-                </div>
               </div>
             </div>
           </div>
@@ -405,9 +381,6 @@
               <div class="skill-card">
                 <img src="Icon/C++.jpeg" alt="C++ Icon" class="skill-icon">
                 <h4>C++</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 70%;">70%</div>
-                </div>
               </div>
             </div>
           </div>
@@ -417,9 +390,6 @@
               <div class="skill-card">
                 <img src="Icon/Microsoft-Power-BI-Logo.jpeg" alt="Power-Bi Icon" class="skill-icon">
                 <h4>Power-Bi</h4>
-                <div class="skill-progress">
-                  <div class="skill-bar" style="width: 70%;">70%</div>
-                </div>
               </div>
             </div>
           </div>
