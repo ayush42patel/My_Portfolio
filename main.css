@@ -1160,6 +1160,18 @@ section,
   line-height: 1.6;
 }
 
+/* Equal height for all project cards */
+.project .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* ensure full height in grid */
+}
+
+/* Project image stays fixed at top */
+.project .project-card .project-image {
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .project .project-filters li {
     font-size: 14px;
@@ -1471,37 +1483,42 @@ section,
   font-size: 0.9em;
 }
 
-.certification-card .button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-.certification-card .button:hover {
-  background-color: #14dc32;
+.certification-card {
+  background: var(--surface-color, #f9f9f9);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
 }
 
 .certification-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
 }
 
-.certification-card p a {
-  color: blue;
-  text-decoration: none;
+.certification-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
 }
 
-.certification-card p a:visited {
-  color: blue;
+/* Small arrow button */
+.cert-link {
+  margin-left: 10px;
+  color: #e87532;
+  font-size: 1.1rem;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
+
+.cert-link:hover {
+  color: #2fe225;
+}
+
 
 @media (max-width: 768px) {
   .certifications-container {
