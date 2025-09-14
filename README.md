@@ -47,7 +47,7 @@ This is a **fully redesigned** and feature-rich portfolio website with an enhanc
   - Machine Learning and Data Science Projects  
   - GitHub links (optional)
 - 🏅 **Certifications Page**  
-  - Highlighting online courses and certifications with images
+  - Highlighting online courses and certifications
 - 📬 **Contact Section**  
   - CSS-improved layout with form and contact details
 - 🧭 Smooth Navigation & Layout
@@ -84,3 +84,4 @@ portfolio/
 ├── resume/
 │   └── Ayush-Patel-Resume.pdf
 ├── README.md
+```
