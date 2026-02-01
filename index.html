@@ -362,40 +362,43 @@
             </div>
 
             <div class="col-lg-6 col-md-6 project-item isotope-item filter-ai">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="Images/Ai_resume_Screening.png" class="img-fluid" alt="AI Resume Optimizer" loading="lazy">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Images/Ai_resume_Screening.png" class="img-fluid" alt="AI Resume Screening System" loading="lazy">
+                </div>
+                <div class="project-content">
+                  <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 4: AI Resume Screening & Career Intelligence System</h3>
+                  <p style="text-align: left;"><strong>Brief of Project:</strong>An AI-powered recruitment intelligence system that analyzes resumes, extracts technical skills using NLP, performs semantic job matching, detects skill gaps, evaluates ATS compatibility, and provides career improvement recommendations.</p><br>
+                
+                  <p style="text-align: left;"><strong>Problem Statement:</strong>Job seekers often struggle to tailor resumes for specific job roles and ATS systems. This project bridges that gap by automating resume evaluation, job matching, and career guidance using Machine Learning and Information Retrieval techniques.</p>
+                  <button class="view-more" onclick="showModal('modal4')">View Details</button>
+                </div>
               </div>
-              <div class="project-content">
-                <h3 style="text-transform: uppercase; margin-bottom: 10px;">Project 4: AI Resume Screening & Career Intelligence System</h3>
-                <p style="text-align: left;"><strong>Brief of Project:</strong>An AI-powered system that analyzes resumes, extracts skills using NLP, matches resumes with job descriptions, detects skill gaps, and provides ATS-focused improvement suggestions.</p><br>
-                <p style="text-align: left;"><strong>Problem Statement:</strong>Job seekers often struggle to align their resumes with job requirements and ATS systems.This project addresses that gap by automating resume evaluation and career guidance using AI.</p>
-                <button class="view-more" onclick="showModal('modal4')">
-                  View Details
-                </button>
-              </div>
-            </div>
 
             <div class="modal" id="modal4">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal4')">&times;</span>
-                <h3 style="text-align: center;"><strong>AI RESUME Screening & CAREER INTELLIGENCE SYSTEM</strong></h3>
-                <p><strong>Project Overview:</strong>This project focuses on building an AI-based resume analysis platform that parses resumes, extracts skills using NLP techniques, evaluates resume strength, and matches candidates with relevant job roles using similarity-based models.</p>
+
+                <h3 style="text-align: center;"><strong>AI RESUME SCREENING & CAREER INTELLIGENCE SYSTEM</strong></h3>
+                <p><strong>Project Overview:</strong>This system simulates an AI-driven recruitment engine. It parses resumes, extracts skills, converts job descriptions and resumes into vector representations using NLP, and performs similarity search using FAISS to identify the most relevant job roles. It also provides skill gap detection, ATS optimization scoring, and personalized career recommendations.</p>
                 <p style="text-align: left;">
-                  <strong>Status:</strong> Completed<br>
-                  <strong>Key Features:</strong>
-                  <ul>
-                    <li>Resume parsing and skill extraction using NLP</li>
-                    <li>Resume strength scoring system</li>
-                    <li>Job-role matching using TF-IDF similarity</li>
-                    <li>Skill gap analysis based on job descriptions</li>
-                    <li>ATS keyword optimization checks</li>
-                    <li>AI-based resume improvement suggestions</li>
-                    <li>Career roadmap recommendations</li>
-                  </ul>
-                </p>
+                <strong>Status:</strong> Completed<br>
+                <strong>Key Features:</strong>
+                <ul>
+                  <li>Resume parsing and skill extraction using NLP</li>
+                  <li>Semantic job matching using TF-IDF + FAISS similarity search</li>
+                  <li>Tech-role filtering using skill-based domain detection</li>
+                  <li>Skill gap analysis against job requirements</li>
+                  <li>ATS keyword compatibility scoring</li>
+                  <li>AI-driven resume improvement suggestions</li>
+                  <li>Resume bullet point rewriting</li>
+                  <li>Project recommendations based on missing skills</li>
+                  <li>Personalized learning roadmap generation</li>
+                </ul></p>
+
                 <p><strong>Technologies Used:</strong> Python, Streamlit</p>
-                <p><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, NLP, Plotly</p>
+                <p><strong>Libraries & Tools:</strong> Pandas, NumPy, Scikit-learn, FAISS, PDFPlumber, Plotly</p>
+
                 <div style="text-align: center;">
                   <a href="https://github.com/ayush42patel/Resume_Screening_Ai" target="_blank" class="view-more">GitHub Repository</a>
                   <a href="https://resume-screening-ai-ap.streamlit.app/" target="_blank" class="view-more">Live Site</a>
