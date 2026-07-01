@@ -1073,6 +1073,80 @@ section,
   opacity: 1;
   visibility: visible;
 }
+/* Desktop / Laptop */
+.project-badges{
+    display: flex;
+    justify-content: center;   /* Center badges */
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.project-badges .badge{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 25px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge.featured{
+    background:#fff4d6;
+    color:#d97706;
+}
+
+.badge.research{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.badge.final{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .project-badges{
+        flex-direction: column;   /* Stack vertically */
+        align-items: stretch;     /* Full width */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .project-badges .badge{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+}
+
+.research-table{
+    width:100%;
+    margin:20px 0;
+    border-collapse:collapse;
+}
+
+.research-table td{
+    padding:10px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.research-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+    margin-top:20px;
+}
 
 .project .project-card:hover .project-overlay .project-actions {
   transform: translateY(0);
